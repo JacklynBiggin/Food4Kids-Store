@@ -12,7 +12,7 @@
                                 </div>
                                 <div class="row">        
                                     <div class="col-6 text-center">  
-                                         <h3>$1</h3>
+                                         <p><strong>$1</strong></p>
                                     </div>
                                     <div class="col-6">  
                                         <button type="button" class="btn btn-primary btn-lg" >Add to bag</button>
