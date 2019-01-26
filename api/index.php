@@ -7,13 +7,16 @@ require_once __DIR__ . "/requires/functions.php";
 $action = (isset($_GET['action']) && !empty($_GET['action'])) ? $_GET['action'] : false;
 
 if(!$action) {
-    returnResponse(false, "No action provided");
+    echo "action";
+    //returnResponse(false, "No action provided");
 }
 
 // Check if action exists
 if(!file_exists("./actions/" . $action . ".php")) {
-    returnResponse(false, "That action doesn&apos;t exist.");
+    echo "exists";
+    //    returnResponse(false, "That action doesn&apos;t exist.");
 }
 
 // If it does, run action
-require_once "./actions/"  . $action . ".php";
+//require_once "./actions/"  . $action . ".php";\
+echo 'END';
