@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/requires/config.php";
+//require_once __DIR__ . "/requires/config.php";
 require_once __DIR__ . "/requires/functions.php";
 
 
