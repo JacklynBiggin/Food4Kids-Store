@@ -18,4 +18,5 @@ if(!file_exists("./actions/" . $action . ".php")) {
 }
 
 // If it does, run action
-require_once "./actions/"  . $action . ".php";
+//require_once "./actions/"  . $action . ".php";\
+echo 'END';
