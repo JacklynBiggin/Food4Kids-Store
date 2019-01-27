@@ -57,7 +57,7 @@
                     <div class="cart-item">
                         <div class="row">
                             <div class="col-2">
-                                <img src="http://e8ad3736.ngrok.io/Food4Kids-Store/assets/images/products/Bag_of_Apples.svg" />
+                                <img src="http://ddf47c07.ngrok.io/Food4Kids-Store/assets/images/products/Bag_of_Apples.svg" />
                             </div>
                             <div class="col-7">
                                 <span class="cart-item-name">Beans in Tomato Sauce</span>
