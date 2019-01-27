@@ -13,18 +13,35 @@
         <h2>Donor and Tax Receipt Information</h2>
         <div class="col-12">
           <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <div class="form-group email">
+                <label for="emailInput">Email address</label>
+                <input type="email" class="form-control" id="emailInput"  placeholder="Enter email" required>
               </div>
-              <div class="form-group">
-                  <label for="exampleFormControlSelect1">Example select</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
+              <div class="form-group donor-type">
+                  <label for="donorType">Donor Type</label>
+                  <select class="form-control" id="donorType" required>
                     <option>Personal</option>
                     <option>Corporate/Group</option>
                   </select>
-                </div>
-              
+            </div>
+            <div class="form-group company-name">
+                <label for="compName">Company Name/Group</label>
+                <input type="text" class="form-control" id="compName" required>
+            </div>
+            <div class="form-group name">
+                <label for="fName">First Name</label>
+                <input type="text" class="form-control" id="fName" required>
+            </div>
+            <div class="form-group name">
+                <label for="lName">First Name</label>
+                <input type="text" class="form-control" id="lName" required>
+            </div>
+            <div class="form-group address">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="aLine1" placeholder="Address Line 1" required>
+                <input type="text" class="form-control" id="aLine2" placeholder="Address Line 2" required>
+            </div>
+            
             
             
         </div>
