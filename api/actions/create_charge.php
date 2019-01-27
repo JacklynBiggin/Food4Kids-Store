@@ -23,8 +23,8 @@ $charge = \Stripe\Charge::create([
 
 $curl = curl_init();
 
-curl_setopt($curl, CURLOPT_URL, $config['DOMAIN_ROOT'] . "api/?action=add_transactions&token=$token&email=$email&amount=$amount");
-curl_exec($curl);
+curl_setopt($curl, CURLOPT_URL, $config['DOMAIN_ROOT'] . "/api/?action=add_transactions&token=$token&email=$email&amount=$amount");
+$response = curl_exec($curl);
 curl_close($curl);
-*/
-echo "test";
+
+echo $response;
