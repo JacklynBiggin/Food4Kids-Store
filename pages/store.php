@@ -51,7 +51,7 @@
                         <div class="bag-items" id="bag-items">
                     </div>
                 </div>
-                <div class="container cart-items">
+                <div class="container cart-items" id="cart-items">
                     <div class="cart-item">
                         <div class="row">
                             <div class="col-2">
