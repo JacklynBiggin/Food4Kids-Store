@@ -12,6 +12,7 @@ $arguments = $_POST['arguments'];
 
 $customer = \Stripe\Customer::create([
     'email' => $email,
+    'receipt_email' => $email,
     'source'  => $token,
 ]);
 
