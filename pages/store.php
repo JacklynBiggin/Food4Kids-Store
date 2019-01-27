@@ -52,6 +52,7 @@
                     </div>
                 </div>
                 <div class="container cart-items" id="cart-items">
+                    <!--
                     <div class="cart-item">
                         <div class="row">
                             <div class="col-2">
@@ -64,7 +65,8 @@
                                 <div class="cart-item-price">$5.00</div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    -->
                 </div>
             </aside>
         </div>
