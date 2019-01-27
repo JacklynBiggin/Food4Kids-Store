@@ -3,6 +3,9 @@
             <div class="col-12 col-md-8 store-background">
                 <div class="container">
                     <div class="row">
+                        <?php
+                        echo getAPIdata(action=get_foods);
+                        ?>
                         <div class="col-12 col-lg-6 col-xl-4">
                             <div class="product-box produce">
                                 <div class="product-header">
