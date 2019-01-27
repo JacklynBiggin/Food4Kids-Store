@@ -15,5 +15,4 @@ $customerid = (isset($_GET['customerid']) && !empty($_GET['customerid'])) ? $_GE
 
 //Not sure how to check if its been added
 
-//Print that it was added
-echo "It was successfully added to the table";
+returnResponse(true, "Added to table")
