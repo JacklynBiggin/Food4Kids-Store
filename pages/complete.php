@@ -4,7 +4,7 @@
           Thanks to your donation of $X, X/10 kids will have food to eat for the weekend!
           Please donate again.
       </div>
-  <div class="row thanks box">
+  <div class="row thanks-box">
     <div class="col">
       <a href="https://www.facebook.com/sharer/sharer.php
       ?u=https%3A%2F%2Ffood4kids.ca%2F"
