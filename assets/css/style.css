@@ -1,3 +1,94 @@
 aside {
     background-color: #AE334E;
+    min-height: 100vh;
+}
+
+.product-box {
+    /* border: 1px #ecf0f1 solid; */
+    padding: 1em;
+    /* box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8; */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding-bottom: 0;
+}
+
+.product-box img {
+    padding-bottom: 2em;
+}
+
+.product-box.produce {
+    background: rgb(187,222,251);
+    background: linear-gradient(0deg, rgba(187,222,251,1) 0%, rgba(222,245,255,1) 100%);
+
+}
+
+.product-box.canned {
+
+}
+
+.product-box.snack {
+
+}
+
+.product-box .product-header {
+    background-color: #4b6584;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -1em;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.product-box .product-header h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.product-box .product-meta {
+    background-color: #AE334E;
+    border-radius: 0 0 12px 12px;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 0.5em;
+}
+
+.product-box .product-meta .price {
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.product-box .product-meta .add-to-cart {
+    font-family: "Open Sans", sans-serif;
+    background-color: #20bf6b;
+    color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+
+.product-box .product-meta .add-to-cart:hover {
+    background-color: #07A652;
+}
+
+.store-background {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 2em;
 }
