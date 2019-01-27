@@ -92,6 +92,10 @@ aside {
     background-color: #07A652;
 }
 
+.thanks-box {
+    background-color: white;
+}
+
 .store-background {
     background-image: url("../images/background.jpg");
     background-position: center;
