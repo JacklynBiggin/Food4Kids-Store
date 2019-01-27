@@ -4,5 +4,3 @@ api/requires/config\.php
 assets/images/Thumbs\.db:encryptable
 
 assets/images/Thumbs\.db
-
-/vendor/
