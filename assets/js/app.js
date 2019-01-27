@@ -9,6 +9,7 @@ function addToCart(food,price,formattedprice,img_url) {
     // Add to cart list
 
     // Modify cart price?
+    price=0;
     newprice += price; 
     console.log(newprice);
 }
