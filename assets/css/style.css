@@ -221,3 +221,12 @@ h2 {
 .checkout-button:hover {
     background-color: #07A652;
 }
+
+.thanks-box h2 {
+    margin-left: -0.8em;
+    margin-right: -0.82em;
+    margin-top: -0.25em;
+    border-radius: 12px 12px 0 0;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
