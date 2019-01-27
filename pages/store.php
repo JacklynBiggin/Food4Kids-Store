@@ -45,6 +45,7 @@
             </div>
             <aside class="col-12 col-md-4">
                 <div class="container">
+                    <div class="total-price" id="total">$10.99</div>
                     <div class="bag-container">
                         <img src="./assets/images/bag.svg" class="bag" />
                         <div class="bag-items" id="bag-items">
