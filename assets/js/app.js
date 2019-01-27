@@ -11,7 +11,7 @@ function addToCart(food,price,formattedprice,img_url) {
     // Add to cart list
 
     // Modify cart price?
-    cartPrice += price; 
+    cartPrice += parseInt(price); 
     console.log(cartPrice);
 }
 
