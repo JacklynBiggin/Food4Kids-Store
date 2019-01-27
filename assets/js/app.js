@@ -13,12 +13,13 @@ function addToCart(food,price,formattedprice,img_url) {
     // Modify cart price?
     cartPrice += parseFloat(price); 
     console.log(cartPrice);
-    $('#total').html("$ " + cartPrice/100);
+    $('#total').html("$ " + (cartPrice/100).toFixed(2));
 }
 
 $( document ).ready(function() {
     console.log( "ready!" );
     cartPrice=0;
+    $('#total').html("$ " + (cartPrice/100).toFixed(2));
     });
     //var price;
 
