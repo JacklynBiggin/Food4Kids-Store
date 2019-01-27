@@ -2,6 +2,7 @@
 
 require __DIR__ . '/../../vendor/autoload.php';
 $config = require_once __DIR__ . '/../requires/config.php';
+require_once __DIR__ . '/../requires/functions.php';
 \Stripe\Stripe::setApiKey("sk_test_fJh8VXj0tMHbp4QdyVorSIXv");
 
 $token  = $_POST['token'];
@@ -27,4 +28,4 @@ curl_setopt($curl, CURLOPT_URL, "http://e8ad3736.ngrok.io/Food4Kids-Store/api/?a
 echo curl_exec($curl);
 curl_close($curl);
 
-var_dump ($arguments);
+returnResponse(true, "It worked.");
