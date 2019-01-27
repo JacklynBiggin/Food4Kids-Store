@@ -25,7 +25,7 @@
                                                 <span class="price">' . $product['formattedPrice'] . '</span>
                                             </div>
                                             <div class="col-6">
-                                                <span class="add-to-cart" onclick="addToCart()"><i class="fas fa-cart-plus"></i> Add</span>
+                                                <span class="add-to-cart" onclick="addToCart(\'$product['food']\', \'$product['price']\',\'$img_url\')"><i class="fas fa-cart-plus"></i> Add</span>
                                             </div>
                                         </div>
                                     </div>
@@ -43,8 +43,7 @@
                 <div class="container">
                     <div class="bag-container">
                         <img src="./assets/images/bag.svg" class="bag" />
-                        <div class="bag-items">
-                            <img src="http://e8ad3736.ngrok.io/Food4Kids-Store/assets/images/products/Bag_of_Oranges.svg" class="bag-item animated fadeInDown" />
+                        <div class="bag-items" id="bag-items">
                         </div>
                     </div>
                 </div>
