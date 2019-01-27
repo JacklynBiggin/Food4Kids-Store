@@ -25,5 +25,3 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $config['DOMAIN_ROOT'] . "/api/?action=add_transactions&token=$token&email=$email&amount=$amount&customerid=" . $customer['id'] . "&receipturl=" . $customer['receipt']);
 $response = curl_exec($curl);
 curl_close($curl);
-
-echo $charge;

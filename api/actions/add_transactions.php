@@ -10,7 +10,7 @@ $receipturl = (isset($_GET['receipturl']) && !empty($_GET['receipturl'])) ? $_GE
  $pdo = createPDO();
  $sql = "INSERT INTO transactions (email, firstname, lastname, customerid, receipturl) VALUES (?,?,?,?,?)";
  $stmt = $pdo->prepare($sql);
- $stmt->execute([$email, $firstname, $lastname, $customerid]);
+ $stmt->execute([$email, $firstname, $lastname, $customerid, $receipturl]);
 
 //Test to add to table:
 //localhost/Food4Kids-Store/api/?action=add_transactions&email=dquan@uwo.ca&firstname=david&lastname=quan&customerid=ch_1Dx9nIEG178pfWT2iTx9Yehx
