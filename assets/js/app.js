@@ -10,6 +10,7 @@ function addToCart(food,price,formattedprice,img_url) {
 
     // Modify cart price?
     price=0;
+    newprice=0;
     newprice += price; 
     console.log(newprice);
 }
