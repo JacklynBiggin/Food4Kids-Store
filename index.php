@@ -25,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link" href="./donation_home.html">Donate Now</a>
+                <a class="nav-item nav-link" href="./pages/home">Donate Now</a>
                 <a class="nav-item nav-link" href="https://www.food4kidshamilton.ca/about">About</a>
                 <a class="nav-item nav-link" href="https://www.food4kidshamilton.ca/programs">Programs</a>
                 <a class="nav-item nav-link" href="https://www.food4kidshamilton.ca/donate-1">Donate</a>
