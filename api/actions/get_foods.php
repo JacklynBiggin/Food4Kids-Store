@@ -1,18 +1,37 @@
 <?php
+//test.com/api/food?category=bread
 
- $pdo = createPDO();
- $sql = "SELECT * FROM food";
- $stmt = $pdo->prepare($sql);
- $stmt->execute([]);
+//Check if there is a category
+$categorySearch = (isset($_GET['category']) && !empty($_GET['category'])) ? $_GET['category'] : false;
 
- //declare array
+
+$pdo = createPDO();
+
+if(!$categorySearch) {  
+   // Category is empty
+   $sql = "SELECT * FROM food";
+   $stmt = $pdo->prepare($sql);
+   $stmt->execute([]);
+}
+else{
+   // Category isn't empty
+   $sql = "SELECT * FROM food WHERE category = ?";
+   $stmt = $pdo->prepare($sql);
+   $stmt->execute([$categorySearch]);
+}
+
+ //declare an array
  $foodinfoArray = array();
+$is_results = false;
 
  foreach($stmt as $row) {
+    $is_results = true;
     $formattedPrice = "$" . number_format(($row['price']/100), 2, ".", " ");
     $foodinfoArray[$row['food']] = ["id" => $row['id'],"food" => $row['food'], "category" => $row['category'],"price" => $row['price'], "formattedPrice" => $formattedPrice];
-    //echo $formattedPrice;
-   }
+    }
 
-//Return Json
-returnJSON(true, $foodinfoArray);
+if($is_results) {
+   returnJSON(true, $foodinfoArray);
+} else {
+   returnResponse(false, "Category not found.");
+}

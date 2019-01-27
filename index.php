@@ -18,7 +18,7 @@
   <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="https://www.food4kidshamilton.ca/">
-                <img src="images/logo.png" width="248" height="120"  class="d-inline-block align-top" alt="Food4Kids"></a>
+                <img src="./assets/images/logo.png" width="248" height="120"  class="d-inline-block align-top" alt="Food4Kids"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
