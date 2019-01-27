@@ -26,4 +26,4 @@ curl_setopt($curl, CURLOPT_URL, "http://e8ad3736.ngrok.io/Food4Kids-Store/api/?a
 echo curl_exec($curl);
 curl_close($curl);
 
-echo $arguments;
+var_dump ($arguments);
