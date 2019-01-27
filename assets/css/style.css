@@ -144,3 +144,31 @@ h2 {
     margin-top: 0.5em;
     font-weight: 600;
 }
+
+.cart-items {
+    margin-top: 43em;
+}
+
+.cart-item {
+    background-color: #FF99B4;
+    border-radius: 12px;
+    padding: 0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+.cart-item-name {
+    margin-top: 0.5em;
+    display: block;
+    font-weight: 600;
+}
+
+.cart-item-price {
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5em;
+}

@@ -49,6 +49,20 @@
                     <div class="bag-container">
                         <img src="./assets/images/bag.svg" class="bag" />
                         <div class="bag-items" id="bag-items">
+                    </div>
+                </div>
+                <div class="container cart-items">
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="http://e8ad3736.ngrok.io/Food4Kids-Store/assets/images/products/Bag_of_Apples.svg" />
+                            </div>
+                            <div class="col-7">
+                                <span class="cart-item-name">Beans in Tomato Sauce</span>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart-item-price">$5.00</div>
+                            </div>
                         </div>
                     </div>
                 </div>
