@@ -11,10 +11,12 @@ aside {
     border-radius: 12px;
     padding-bottom: 0;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .product-box img {
     padding-bottom: 2em;
+    max-width: 100%;
 }
 
 .product-box.produce {
@@ -92,4 +94,29 @@ aside {
     background-position: center;
     background-size: cover;
     padding-top: 2em;
+}
+
+.bag-container {
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 12em;
+}
+
+.bag {
+    width: calc(100% - 11em);
+    z-index: 2;
+    position: absolute;
+}
+
+.bag-items {
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.bag-item {
+    width: 120%;
+    height: auto;
+    margin-left: 7em;
+    margin-top: 1em;
 }
