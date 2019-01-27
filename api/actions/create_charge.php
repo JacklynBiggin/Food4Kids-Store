@@ -7,6 +7,7 @@ $config = require_once __DIR__ . '/../requires/config.php';
 $token  = $_POST['token'];
 $email  = $_POST['email'];
 $amount = $_POST['amount'];
+$arguments = $_POST['arguments'];
 
 
 $customer = \Stripe\Customer::create([
@@ -25,3 +26,4 @@ curl_setopt($curl, CURLOPT_URL, "http://e8ad3736.ngrok.io/Food4Kids-Store/api/?a
 echo curl_exec($curl);
 curl_close($curl);
 
+echo $arguments;
