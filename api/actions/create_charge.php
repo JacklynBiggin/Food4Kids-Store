@@ -14,7 +14,6 @@ $customer = \Stripe\Customer::create([
     'source'  => $token,
 ]);
 
-/*
 $charge = \Stripe\Charge::create([
     'customer' => $customer->id,
     'amount'   => $amount,
