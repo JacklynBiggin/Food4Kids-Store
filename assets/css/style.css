@@ -19,18 +19,21 @@ aside {
     max-width: 100%;
 }
 
-.product-box.produce {
+.product-box.Produce {
     background: rgb(187,222,251);
     background: linear-gradient(0deg, rgba(187,222,251,1) 0%, rgba(222,245,255,1) 100%);
 
 }
 
-.product-box.canned {
-
+.product-box.Canned_Goods {
+    background: rgb(255,254,240);
+    background: linear-gradient(180deg, rgba(255,254,240,1) 0%, rgba(255,253,231,1) 100%);
 }
 
-.product-box.snack {
-
+.product-box.Snacks {
+    background: rgb(255,248,250);
+    background: linear-gradient(180deg, rgba(255,248,250,1) 0%, rgba(252,228,236,1) 100%);
+    
 }
 
 .product-box .product-header {
@@ -119,4 +122,15 @@ aside {
     height: auto;
     margin-top: 1.8em;
     position: absolute;
+}
+
+h2 {
+    background-color: #4b6584;
+    padding: 0.5em 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-bottom: 0.8em;
+    font-size: 2.5em;
+    color: white;
 }
