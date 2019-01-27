@@ -1,4 +1,4 @@
-var cartPrice = 0;
+var cartPrice;
 
 function addToCart(food,price,formattedprice,img_url) {
 
@@ -11,8 +11,9 @@ function addToCart(food,price,formattedprice,img_url) {
     // Add to cart list
 
     // Modify cart price?
-    cartPrice += parseInt(price); 
+    cartPrice += parseFloat(price); 
     console.log(cartPrice);
+    $('#total').html("$ " + cartPrice/100);
 }
 
 $( document ).ready(function() {
