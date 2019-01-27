@@ -9,7 +9,7 @@
  $transinfoArray = array();
 
  foreach($stmt as $row) {
-    $transinfoArray[$row['id']] = ["id" => $row['id'],"email" => $row['email'],"firstname" => $row['firstname'], "lastname" => $row['lastname'], "timestamp" => $row['timestamp'], "customerid" => $row['customerid'], "receipturl" => $row['receipturl']];
+    $transinfoArray[$row['id']] = ["id" => $row['id'],"email" => $row['email'],"firstname" => $row['firstname'], "lastname" => $row['lastname'], "timestamp" => $row['timestamp'], "customerid" => $row['customerid']];
 }
 
 //Return Json
