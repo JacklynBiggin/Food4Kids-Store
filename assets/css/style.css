@@ -95,14 +95,16 @@ aside {
 .store-background {
     background-image: url("../images/background.jpg");
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 2em;
+    background-repeat: no-repeat;
 }
 
 .bag-container {
     margin-left: 4em;
     margin-right: 4em;
-    margin-top: 12em;
+    margin-top: 8em;
 }
 
 .bag {
@@ -133,4 +135,68 @@ h2 {
     margin-bottom: 0.8em;
     font-size: 2.5em;
     color: white;
+}
+
+.total-price {
+    color: black;
+    text-align: center;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 4em;
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+.cart-items {
+    margin-top: 44em;
+}
+
+.cart-item {
+    background-color: #FF99B4;
+    border-radius: 12px;
+    padding: 0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6em;;
+    margin-bottom: 0.5em;
+}
+
+.cart-item img {
+    width: 100%;
+    height: auto;
+}
+
+.cart-item-name {
+    margin-top: 0.5em;
+    display: block;
+    font-weight: 600;
+}
+
+.cart-item-price {
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.checkout-button, a.checkout-button {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.5em; 
+    background-color: #20bf6b;
+    font-weight: 600;
+    font-size: 1.8em;
+    border-radius: 12px;
+    padding: 0.5em 0.4em;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #07A652;
 }
