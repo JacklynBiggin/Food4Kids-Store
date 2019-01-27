@@ -94,6 +94,13 @@ aside {
 
 .thanks-box {
     background-color: white;
+    padding: 0.5em 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-radius: 12px;
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    color: white;
 }
 
 .store-background {
