@@ -25,7 +25,7 @@ $charge = \Stripe\Charge::create([
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, "http://e8ad3736.ngrok.io/Food4Kids-Store/api/?action=add_transactions&token=$token&email=$email&amount=$amount&customerid=" . $customer['id'] . "&fullname=" . $arguments['billing_name']);
-echo curl_exec($curl);
+curl_exec($curl);
 curl_close($curl);
 
 returnResponse(true, "It worked.");
