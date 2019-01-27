@@ -101,6 +101,15 @@ aside {
     background-repeat: no-repeat;
 }
 
+.complete-background {
+    background-image: url("../images/happy_background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 2em;
+    background-repeat: no-repeat;
+}
+
 .bag-container {
     margin-left: 4em;
     margin-right: 4em;

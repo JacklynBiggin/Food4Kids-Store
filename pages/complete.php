@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container complete-background">
       <div class="row">
         <p>Thanks to your donation of $X, X/10 kids will have food to eat for the weekend!
+        Please donate again.
         </p>
       </div>
       <div class="row">
