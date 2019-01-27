@@ -12,7 +12,7 @@ $customerid = (isset($_GET['customerid']) && !empty($_GET['customerid'])) ? $_GE
  $stmt->execute([$email, $firstname, $lastname, $customerid]);
 
 //Test to add to table:
-//localhost/Food4Kids-Store/api/?action=add_transaction&email=dquan@uwo.ca&firstname=david&lastname=quan&customerid=ch_1Dx9nIEG178pfWT2iTx9Yehx
+//localhost/Food4Kids-Store/api/?action=add_transactions&email=dquan@uwo.ca&firstname=david&lastname=quan&customerid=ch_1Dx9nIEG178pfWT2iTx9Yehx
 
 //Not sure how to check if its been added
 
