@@ -6,7 +6,7 @@ require __DIR__ . '/../../vendor/autoload.php';
 
 $token  = $_POST['stripeToken'];
 $email  = $_POST['stripeEmail'];
-$amount = $_POST['amount']
+$amount = $_POST['amount'];
 
 $customer = \Stripe\Customer::create([
     'email' => $email,
@@ -19,4 +19,8 @@ $charge = \Stripe\Charge::create([
     'currency' => 'cad',
 ]);
 
-echo $amount;
+$curl = curl_init();
+
+curl_setopt($curl, CURLOPT_URL, "http://localhost/Food4Kids-Store/api?action=add_transactions&token=$token&email=$email&amount=$amount")
+
+echo $charge;
