@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="container cart-items" id="cart-items">
-                    <a class="checkout-button" href="./?page=checkout&total=100" style="color: white;"><i class="fas fa-money-check-alt"></i> Checkout</a>
+                    
                     <!--
                     <div class="cart-item">
                         <div class="row">
