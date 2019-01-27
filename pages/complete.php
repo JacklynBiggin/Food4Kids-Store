@@ -1,8 +1,10 @@
 <div class="complete-background">
   <div class="container">
       <div class="row thanks-box">
-          Thanks to your donation of $X, X/10 kids will have food to eat for the weekend!
-          Please donate again.
+        <div class="col-12">
+          <h2>Thank you!</h2>
+          <p>Thanks for donating $<?php echo htmlspecialchars(number_format(($_GET['total']/100), 2, ".", " ")); ?> to Food4Kids Hamilton! Your donation will help support X children's meals.</p>
+        </div>
       </div>
   <div class="row thanks-box">
     <div class="col">

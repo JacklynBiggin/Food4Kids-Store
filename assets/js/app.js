@@ -19,10 +19,16 @@ function addToCart(food,price,formattedprice,img_url) {
             image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
             locale: 'auto',
             token: function(token, args) {
-                $.post('./api/?action=create_charge', {token: token.id, email: token.email, amount: cartPrice, arguments: args}, function (data) {
-                    console.log
-                    location.href = "https://e8ad3736.ngrok.io/Food4Kids-Store/?page=complete"
+                $.post('https://e8ad3736.ngrok.io/Food4Kids-Store/api/?action=create_charge', {"token": token.id, "email": token.email, "amount": cartPrice, "arguments": args}, function (data) {
+                    console.log("Called")
+                    console.log(data)
+                    window.location = "?page=complete"
+                }).fail(function(data){
+                    console.log("error - ");
+                    console.log(data);
                 });
+                // Temp til we can work out whats causing this bug
+                window.location = "https://e8ad3736.ngrok.io/Food4Kids-Store/?page=complete&total=" + cartPrice
             console.log(token.id)
             }
         });
