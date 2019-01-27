@@ -4,7 +4,12 @@
                 <div class="container">
                     <div class="row">
                         <?php
-                        echo getAPIdata("action=get_foods");
+                        $produceList = getAPIdata("action=get_foods&category=produce");
+                        foreach($produceList as $product){
+                            echo $product['food'];
+                        }
+
+                        
                         ?>
                         <div class="col-12 col-lg-6 col-xl-4">
                             <div class="product-box produce">
