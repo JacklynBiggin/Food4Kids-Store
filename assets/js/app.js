@@ -1,3 +1,5 @@
+var cartPrice = 0;
+
 function addToCart(food,price,formattedprice,img_url) {
 
     // Generate random number
@@ -15,7 +17,7 @@ function addToCart(food,price,formattedprice,img_url) {
 
 $( document ).ready(function() {
     console.log( "ready!" );
-    var cartPrice=0;
+    cartPrice=0;
     });
     //var price;
 
