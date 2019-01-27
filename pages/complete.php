@@ -1,6 +1,6 @@
 <div class="container">
       <div class="row">
-        <p>Thanks to your donation of $X, X/10 kids will have food to eat at for the weekend!
+        <p>Thanks to your donation of $X, X/10 kids will have food to eat for the weekend!
         </p>
       </div>
       <div class="row">
