@@ -20,6 +20,5 @@ function getAPIdata($url){
     curl_close($curl);
 
     $resp = str_replace('"success":true,', "", $resp);
-
     return json_decode($resp, true);
 }
