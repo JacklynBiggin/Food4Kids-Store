@@ -3,7 +3,7 @@
       <div class="row thanks-box">
         <div class="col-12">
           <h2>Thank you!</h2>
-          <p>Thanks for donating $<?php echo htmlspecialchars(number_format(($_GET['total']/100), 2, ".", " ")); ?> to Food4Kids Hamilton! Your donation will help support X children's meals.</p>
+          <p>Thanks for donating $<?php echo htmlspecialchars(number_format(($_GET['total']/100), 2, ".", " ")); ?> to Food4Kids Hamilton! Your donation will help support <?php echo round($_GET['total'] / 250); ?> children's meals.</p>
         </div>
       </div>
   <div class="row thanks-box">
