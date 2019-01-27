@@ -108,6 +108,7 @@ aside {
     background-size: cover;
     padding-top: 2em;
     background-repeat: no-repeat;
+    min-height: 100%;
 }
 
 .bag-container {
