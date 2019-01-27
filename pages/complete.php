@@ -19,9 +19,9 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div class="fb-share-button" data-href="https://www.food4kidshamilton.ca/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.food4kidshamilton.ca%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <div class="fb-share-button text-center" data-href="https://www.food4kidshamilton.ca/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.food4kidshamilton.ca%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
     </div>
-    <div class="col">
+    <div class="col text-center">
     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I just donated to Food 4 Kids Hamilton, an organization who&#39;s goal is to help feed children in the Hamilton Region! Check them out and provide a child a meal!" data-via="Food4KidsHamOnt" data-hashtags="ProvideSupport" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
