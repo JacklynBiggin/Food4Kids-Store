@@ -12,5 +12,5 @@ if(!$id) {
  $stmt->execute([$id]);
 
  foreach($stmt as $row) {
-    returnJSON(true, [$row['id']] = ["id" => $row['id'],"email" => $row['email'],"firstname" => $row['firstname'], "lastname" => $row['lastname'], "timestamp" => $row['timestamp']]);
+    returnJSON(true, [$row['id']] = ["id" => $row['id'],"email" => $row['email'],"firstname" => $row['firstname'], "lastname" => $row['lastname'], "customerid" => $row['customerid'], "timestamp" => $row['timestamp']]);
 }

@@ -11,7 +11,41 @@ function addToCart(food,price,formattedprice,img_url) {
     
     // Add to cart list
     if (cartPrice == 0) {
-        $( "#cart-items" ).append(  '<a class="checkout-button animate bounceIn" id="checkout" style="color: white;"><i class="fas fa-money-check-alt"></i> Checkout</a>');
+        $( "#cart-items" ).append(  '<a href="#" class="checkout-button animate bounceIn" id="checkout"><i class="fas fa-money-check-alt"></i> Checkout</a>');
+
+        // Stripe
+        var handler = StripeCheckout.configure({
+            key: 'pk_test_BuGfa1HX2XMnCS5sui8f83oZ',
+            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+            locale: 'auto',
+            token: function(token) {
+                $.post('./api/?action=create_charge', {token: token.id, email: token.email, amount: cartPrice}, function (data) {
+                    console.log(data)
+                });
+            console.log(token.id)
+            }
+        });
+        
+        document.getElementById('checkout').addEventListener('click', function(e) {
+            // Open Checkout with further options:
+            handler.open({
+                name: 'Food4Kids Donation',
+                description: 'Thank you!',
+                zipCode: true,
+                amount: cartPrice,
+                currency: "CAD",
+                billingAddress: true,
+                panelLabel: "Donate {{amount}}"
+            });
+            e.preventDefault();
+        });
+        
+        // Close Checkout on page navigation:
+        window.addEventListener('popstate', function() {
+    handler.close();
+  });
+  
+  
     }
     $( "#cart-items" ).append( '<div class="cart-item animate bounceIn"> <div class="row"> <div class="col-2"> <img src="' + img_url + '">  </div> <div class="col-7"> <span class="cart-item-name">' + food + '</span> </div> <div class="col-3"> <div class="cart-item-price">' + formattedprice + '</div> </div> </div> </div>');
     
@@ -20,7 +54,7 @@ function addToCart(food,price,formattedprice,img_url) {
     $('#total').html("$ " + (cartPrice/100).toFixed(2));
 
     // Modify Checkout HREF
-    $( "#checkout" ).attr("href" , "./?page=checkout&total="+cartPrice);
+    //$( "#checkout" ).attr("href" , "./?page=checkout&total="+cartPrice);
 }
 
 
@@ -29,10 +63,5 @@ $( document ).ready(function() {
     console.log( "ready!" );
     cartPrice=0;
     $('#total').html("$ " + (cartPrice/100).toFixed(2));
-    });
+});
     //var price;
-
-
-
-
-    
