@@ -24,5 +24,3 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, "http://localhost/Food4Kids-Store/api?action=add_transactions&token=$token&email=$email&amount=$amount")
 curl_exec($curl);
 curl_close($curl);
-
-echo $charge;
