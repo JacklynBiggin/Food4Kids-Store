@@ -12,13 +12,13 @@ $arguments = $_POST['arguments'];
 
 $customer = \Stripe\Customer::create([
     'email' => $email,
-    'receipt_email' => $email,
     'source'  => $token,
 ]);
 
 $charge = \Stripe\Charge::create([
     'customer' => $customer->id,
     'amount'   => $amount,
+    'receipt_email' => $email,
     'currency' => 'cad',
 ]);
 
