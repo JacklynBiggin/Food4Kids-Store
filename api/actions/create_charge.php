@@ -7,10 +7,12 @@ $config = require_once __DIR__ . '/../requires/config.php';
 $token  = $_POST['token'];
 $email  = $_POST['email'];
 $amount = $_POST['amount'];
+$arguments = $_POST['arguments'];
 
 
 $customer = \Stripe\Customer::create([
     'email' => $email,
+    'receipt_email' => $email,
     'source'  => $token,
 ]);
 
@@ -21,9 +23,8 @@ $charge = \Stripe\Charge::create([
 ]);
 
 $curl = curl_init();
-
-curl_setopt($curl, CURLOPT_URL, $config['DOMAIN_ROOT'] . "/api/?action=add_transactions&token=$token&email=$email&amount=$amount&customerid=" . $customer['id'] . "&receipturl=$customer['receipt']");
-$response = curl_exec($curl);
+curl_setopt($curl, CURLOPT_URL, "http://e8ad3736.ngrok.io/Food4Kids-Store/api/?action=add_transactions&token=$token&email=$email&amount=$amount&customerid=" . $customer['id'] . "&fullname=" . $arguments['billing_name']);
+echo curl_exec($curl);
 curl_close($curl);
 
-echo $charge;
+var_dump ($arguments);

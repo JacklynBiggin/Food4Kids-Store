@@ -18,8 +18,8 @@ function addToCart(food,price,formattedprice,img_url) {
             key: 'pk_test_BuGfa1HX2XMnCS5sui8f83oZ',
             image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
             locale: 'auto',
-            token: function(token) {
-                $.post('./api/?action=create_charge', {token: token.id, email: token.email, amount: cartPrice}, function (data) {
+            token: function(token, args) {
+                $.post('./api/?action=create_charge', {token: token.id, email: token.email, amount: cartPrice, arguments: args}, function (data) {
                     console.log(data)
                 });
             console.log(token.id)
