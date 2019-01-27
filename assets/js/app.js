@@ -1,4 +1,4 @@
-function addToCart(food,price,img_url) {
+function addToCart(food,newprice,formattedprice,img_url) {
 
     // Generate random number
     margin = Math.floor(Math.random() * 9) + 1  
@@ -9,4 +9,17 @@ function addToCart(food,price,img_url) {
     // Add to cart list
 
     // Modify cart price?
+    price += newprice; 
+    console.log(price);
 }
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+    var price=0;
+    });
+    //var price;
+
+
+
+
+    
