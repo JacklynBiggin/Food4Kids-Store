@@ -25,7 +25,7 @@
                                                 <span class="price">' . $product['formattedPrice'] . '</span>
                                             </div>
                                             <div class="col-6">
-                                                <span class="add-to-cart"><i class="fas fa-cart-plus"></i> Add</span>
+                                                <span class="add-to-cart" onclick="addToCart()"><i class="fas fa-cart-plus"></i> Add</span>
                                             </div>
                                         </div>
                                     </div>
@@ -37,35 +37,16 @@
                         
                         ?>
                     </div>
-                    <!--<div class="row">
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                        <div class="col-6 col-md-3">...</div>
-                    </div>-->
                 </div>
             </div>
             <aside class="col-12 col-md-4">
                 <div class="container">
-                    bag goes here<br>bag goes here<br>bag goes here<br>bag goes here<br>bag goes here<br>bag goes here<br>
+                    <div class="bag-container">
+                        <img src="./assets/images/bag.svg" class="bag" />
+                        <div class="bag-items">
+                            <img src="http://e8ad3736.ngrok.io/Food4Kids-Store/assets/images/products/Bag_of_Oranges.svg" class="bag-item animated fadeInDown" />
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
