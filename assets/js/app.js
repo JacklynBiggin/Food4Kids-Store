@@ -9,15 +9,13 @@ function addToCart(food,price,formattedprice,img_url) {
     // Add to cart list
 
     // Modify cart price?
-    price=0;
-    newprice=0;
-    newprice += price; 
-    console.log(newprice);
+    cartPrice += price; 
+    console.log(cartPrice);
 }
 
 $( document ).ready(function() {
     console.log( "ready!" );
-    var price=0;
+    var cartPrice=0;
     });
     //var price;
 
