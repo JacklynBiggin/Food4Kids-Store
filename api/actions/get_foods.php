@@ -4,9 +4,9 @@
 //Check if there is a category
 $categorySearch = (isset($_GET['category']) && !empty($_GET['category'])) ? $_GET['category'] : false;
 
-
 $pdo = createPDO();
 
+//http://localhost/Food4Kids-Store/api/?action=get_foods&category=Produce
 if(!$categorySearch) {  
    // Category is empty
    $sql = "SELECT * FROM food";
