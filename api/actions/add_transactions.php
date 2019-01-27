@@ -5,9 +5,10 @@ $email = (isset($_GET['email']) && !empty($_GET['email'])) ? $_GET['email'] : fa
 $firstname = (isset($_GET['firstname']) && !empty($_GET['firstname'])) ? $_GET['firstname'] : false;
 $lastname = (isset($_GET['lastname']) && !empty($_GET['lastname'])) ? $_GET['lastname'] : false;
 $customerid = (isset($_GET['customerid']) && !empty($_GET['customerid'])) ? $_GET['customerid'] : false;
+$receipturl = (isset($_GET['receipturl']) && !empty($_GET['receipturl'])) ? $_GET['receipturl'] : false;
 
  $pdo = createPDO();
- $sql = "INSERT INTO transactions (email, firstname, lastname, customerid) VALUES (?,?,?,?)";
+ $sql = "INSERT INTO transactions (email, firstname, lastname, customerid, receipturl) VALUES (?,?,?,?,?)";
  $stmt = $pdo->prepare($sql);
  $stmt->execute([$email, $firstname, $lastname, $customerid]);
 
