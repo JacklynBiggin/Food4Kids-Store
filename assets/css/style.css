@@ -95,8 +95,10 @@ aside {
 .store-background {
     background-image: url("../images/background.jpg");
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 2em;
+    background-repeat: no-repeat;
 }
 
 .bag-container {
@@ -146,7 +148,7 @@ h2 {
 }
 
 .cart-items {
-    margin-top: 43em;
+    margin-top: 44em;
 }
 
 .cart-item {
@@ -155,7 +157,7 @@ h2 {
     padding: 0.5em;
     font-family: "Open Sans", sans-serif;
     font-size: 1.6em;;
-    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 .cart-item img {
@@ -176,4 +178,25 @@ h2 {
     border-radius: 4px;
     text-align: center;
     padding: 0.5em;
+}
+
+.checkout-button, a.checkout-button {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.5em; 
+    background-color: #20bf6b;
+    font-weight: 600;
+    font-size: 1.8em;
+    border-radius: 12px;
+    padding: 0.5em 0.4em;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #07A652;
 }
