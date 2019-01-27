@@ -1,0 +1,10 @@
+{
+    "name": "deltahacks/food4kids-store",
+    "description": "pls",
+    "type": "metapackage",
+    "require": {
+        "stripe/stripe-php": "^6.29"
+    },
+    "license": "proprietary",
+    "minimum-stability": "stable"
+}

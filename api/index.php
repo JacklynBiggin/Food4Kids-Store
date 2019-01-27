@@ -7,7 +7,6 @@ require_once __DIR__ . "/requires/functions.php";
 $action = (isset($_GET['action']) && !empty($_GET['action'])) ? $_GET['action'] : false;
 
 if(!$action) {
-    echo "action";
     returnResponse(false, "No action provided");
 }
 
