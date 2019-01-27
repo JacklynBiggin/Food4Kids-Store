@@ -20,7 +20,8 @@ function addToCart(food,price,formattedprice,img_url) {
             locale: 'auto',
             token: function(token, args) {
                 $.post('./api/?action=create_charge', {token: token.id, email: token.email, amount: cartPrice, arguments: args}, function (data) {
-                    console.log(data)
+                    console.log
+                    location.href = "https://e8ad3736.ngrok.io/Food4Kids-Store/?page=complete"
                 });
             console.log(token.id)
             }
