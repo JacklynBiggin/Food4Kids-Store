@@ -1,4 +1,6 @@
 # Food4Kids-Store
+> ⚠️ This is a Hackathon entry for DeltaHacks V, and was created in under 24 hours. The code in this repo is likely to be hacky and potentially unstable/insecure, so please be careful if forking this repo. [You can view the project's Devpost page here.](https://devpost.com/software/food-4-kids-hamilton)
+
 ## Inspiration
 In the region of Hamilton, roughly **1,300 children** go through each weekend without food.  This was extremely shocking to us, as it was hard to believe that this is occurring in our very community.  Determined to help the children in need, we decided to  take on **Food4KidsHamilton's** challenge, and ultimately try and reduce the this issue.
 
